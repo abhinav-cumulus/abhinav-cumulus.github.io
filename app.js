@@ -31,18 +31,18 @@ d3.json("sample-topology-ring.json").then(function (data) {
     'links': []
   };
 
-  graph.nodes.forEach(function (d, i) {
-    label.nodes.push({ node: d });
-    label.nodes.push({ node: d });
-    label.links.push({
-      source: i * 2,
-      target: i * 2 + 1
-    });
-  });
+  // graph.nodes.forEach(function (d, i) {
+  //   label.nodes.push({ node: d });
+  //   label.nodes.push({ node: d });
+  //   label.links.push({
+  //     source: i * 2,
+  //     target: i * 2 + 1
+  //   });
+  // });
 
-  var labelLayout = d3.forceSimulation(label.nodes)
-    .force("charge", d3.forceManyBody().strength(-100))
-    .force("link", d3.forceLink(label.links).distance(0).strength(2));
+  // var labelLayout = d3.forceSimulation(label.nodes)
+  //   .force("charge", d3.forceManyBody().strength(-100))
+  //   .force("link", d3.forceLink(label.links).distance(0).strength(2));
 
   selectiveGravity = () => {
     graph.nodes.forEach((d) => {
@@ -148,16 +148,16 @@ d3.json("sample-topology-ring.json").then(function (data) {
   //         .on("end", dragended)
   // );
 
-  var labelNode = container.append("g").attr("class", "labelNodes")
-    .selectAll("text")
-    .data(label.nodes)
-    .enter()
-    .append("text")
-    .text(function (d, i) { return i % 2 == 0 ? "" : d.node.id; })
-    .style("fill", "#555")
-    .style("font-family", "Arial")
-    .style("font-size", 12)
-    .style("pointer-events", "none"); // to prevent mouseover/drag capture
+  // var labelNode = container.append("g").attr("class", "labelNodes")
+  //   .selectAll("text")
+  //   .data(label.nodes)
+  //   .enter()
+  //   .append("text")
+  //   .text(function (d, i) { return i % 2 == 0 ? "" : d.node.id; })
+  //   .style("fill", "#555")
+  //   .style("font-family", "Arial")
+  //   .style("font-size", 12)
+  //   .style("pointer-events", "none"); // to prevent mouseover/drag capture
 
   node.on("mouseover", focus).on("mouseout", unfocus);
 
@@ -223,9 +223,9 @@ d3.json("sample-topology-ring.json").then(function (data) {
     node.style("opacity", function (o) {
       return neigh(index, o.index) ? 1 : 0.1;
     });
-    labelNode.attr("display", function (o) {
-      return neigh(index, o.node.index) ? "block" : "none";
-    });
+    // labelNode.attr("display", function (o) {
+    //   return neigh(index, o.node.index) ? "block" : "none";
+    // });
     link.style("opacity", function (o) {
       return o.source.index == index || o.target.index == index ? 1 : 0.1;
     });
@@ -235,7 +235,7 @@ d3.json("sample-topology-ring.json").then(function (data) {
   }
 
   function unfocus() {
-    labelNode.attr("display", "block");
+    // labelNode.attr("display", "block");
     node.style("opacity", 1);
     link.style("opacity", 1);
 

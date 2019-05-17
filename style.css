@@ -19,4 +19,9 @@
   width: 200px;
   height: 100%;
   border-left: 1px solid #aaa;
+  padding: 10px;
+}
+
+#node-desc h2 {
+  display: inline-block;
 }

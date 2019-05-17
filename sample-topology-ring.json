@@ -1,0 +1,4025 @@
+{
+  "name": "sample ring topology",
+  "time": 1543431754604,
+  "overview": {
+    "counts_by_tier": {
+      "0": 20,
+      "1": 22,
+      "2": 14,
+      "3": 4,
+      "4": 10,
+      "5": 6
+    },
+    "count_alarm": 361,
+    "count_warning": 314,
+    "count_info": 312,
+    "count_debug": 279,
+    "count_board_vendor": 11,
+    "count_board_model": 44,
+    "count_asic_vendor": 2,
+    "count_asic_model": 12,
+    "count_asic_bw_port": 16,
+    "count_os_name": 1,
+    "count_os_version": 26
+  },
+  "nodes": [
+    {
+      "name": "server01",
+      "tier": "0",
+      "count_alarm": 3,
+      "count_warning": 3,
+      "count_info": 3,
+      "count_debug": 0,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server02",
+      "tier": "0",
+      "count_alarm": 3,
+      "count_warning": 0,
+      "count_info": 2,
+      "count_debug": 3,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server03",
+      "tier": "0",
+      "count_alarm": 2,
+      "count_warning": 3,
+      "count_info": 2,
+      "count_debug": 2,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server04",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 3,
+      "count_info": 3,
+      "count_debug": 0,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "leaf01",
+      "tier": "1",
+      "count_alarm": 9,
+      "count_warning": 1,
+      "count_info": 2,
+      "count_debug": 10,
+      "board_vendor": "HPE",
+      "board_model": "Altoline 6900",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Helix4",
+      "asic_bw_port": "48 x 1G-T & 4 x 10G-SFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.4.4",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf02",
+      "tier": "1",
+      "count_alarm": 0,
+      "count_warning": 8,
+      "count_info": 5,
+      "count_debug": 4,
+      "board_vendor": "Supermicro",
+      "board_model": "SSE-G3648B",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Helix4",
+      "asic_bw_port": "48 x 1G-T & 4 x 10G-SFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.1.3",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf03",
+      "tier": "1",
+      "count_alarm": 1,
+      "count_warning": 4,
+      "count_info": 9,
+      "count_debug": 1,
+      "board_vendor": "Mellanox",
+      "board_model": "SN2010",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "18 x 25G-SFP28 & 4 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf04",
+      "tier": "1",
+      "count_alarm": 9,
+      "count_warning": 1,
+      "count_info": 6,
+      "count_debug": 7,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 3200xlp",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.4.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "spine01",
+      "tier": "2",
+      "count_alarm": 8,
+      "count_warning": 0,
+      "count_info": 6,
+      "count_debug": 0,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T7032-IX7",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident3",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "spine02",
+      "tier": "2",
+      "count_alarm": 6,
+      "count_warning": 8,
+      "count_info": 5,
+      "count_debug": 5,
+      "board_vendor": "Dell",
+      "board_model": "S6000-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit01",
+      "tier": "4",
+      "count_alarm": 6,
+      "count_warning": 4,
+      "count_info": 2,
+      "count_debug": 4,
+      "board_vendor": "Delta",
+      "board_model": "AG7648",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "48 x 10G-SFP+ & 6 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.4.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit02",
+      "tier": "4",
+      "count_alarm": 5,
+      "count_warning": 7,
+      "count_info": 2,
+      "count_debug": 7,
+      "board_vendor": "EdgeCore",
+      "board_model": "AS5812-54X",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2+",
+      "asic_bw_port": "48 x 10G-SFP+ & 6 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.3.3",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "server05",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 0,
+      "count_info": 0,
+      "count_debug": 2,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server06",
+      "tier": "0",
+      "count_alarm": 2,
+      "count_warning": 0,
+      "count_info": 1,
+      "count_debug": 0,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server07",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 0,
+      "count_info": 0,
+      "count_debug": 1,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server08",
+      "tier": "0",
+      "count_alarm": 2,
+      "count_warning": 2,
+      "count_info": 2,
+      "count_debug": 2,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "leaf05",
+      "tier": "1",
+      "count_alarm": 9,
+      "count_warning": 8,
+      "count_info": 3,
+      "count_debug": 0,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T3048-LY8",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "48 x 10G-SFP+ & 2 x 40G-QSFP+ & 4 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf06",
+      "tier": "1",
+      "count_alarm": 9,
+      "count_warning": 8,
+      "count_info": 2,
+      "count_debug": 5,
+      "board_vendor": "Facebook",
+      "board_model": "Wedge-100",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.4",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf07",
+      "tier": "1",
+      "count_alarm": 5,
+      "count_warning": 1,
+      "count_info": 0,
+      "count_debug": 1,
+      "board_vendor": "Dell",
+      "board_model": "S6000-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.3.2",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf08",
+      "tier": "1",
+      "count_alarm": 7,
+      "count_warning": 9,
+      "count_info": 5,
+      "count_debug": 4,
+      "board_vendor": "Cumulus Networks",
+      "board_model": "CX-RMP-T",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Hurricane2",
+      "asic_bw_port": "48 x 1G-T & 4 x 10G-SFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "spine03",
+      "tier": "2",
+      "count_alarm": 6,
+      "count_warning": 0,
+      "count_info": 10,
+      "count_debug": 3,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T4048-IX2",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "48 x 25G-SFP28 & 8 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "spine04",
+      "tier": "2",
+      "count_alarm": 9,
+      "count_warning": 4,
+      "count_info": 3,
+      "count_debug": 1,
+      "board_vendor": "Mellanox",
+      "board_model": "SN2410",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "48 x 25G-SFP28 & 8 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit03",
+      "tier": "4",
+      "count_alarm": 2,
+      "count_warning": 9,
+      "count_info": 9,
+      "count_debug": 5,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T5032-LY6-x86",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.5.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit04",
+      "tier": "4",
+      "count_alarm": 3,
+      "count_warning": 4,
+      "count_info": 1,
+      "count_debug": 9,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 1600cs",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "16 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.4.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "server09",
+      "tier": "0",
+      "count_alarm": 0,
+      "count_warning": 1,
+      "count_info": 2,
+      "count_debug": 0,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server10",
+      "tier": "0",
+      "count_alarm": 2,
+      "count_warning": 1,
+      "count_info": 0,
+      "count_debug": 1,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server11",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 2,
+      "count_info": 1,
+      "count_debug": 1,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "server12",
+      "tier": "0",
+      "count_alarm": 0,
+      "count_warning": 0,
+      "count_info": 0,
+      "count_debug": 3,
+      "interfaces": [
+        {
+          "name": "eth1"
+        },
+        {
+          "name": "eth2"
+        }
+      ]
+    },
+    {
+      "name": "leaf09",
+      "tier": "1",
+      "count_alarm": 10,
+      "count_warning": 9,
+      "count_info": 6,
+      "count_debug": 3,
+      "board_vendor": "EdgeCore",
+      "board_model": "AS6812-32X",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2+",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf10",
+      "tier": "1",
+      "count_alarm": 8,
+      "count_warning": 7,
+      "count_info": 8,
+      "count_debug": 7,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T4048-IX8",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident3",
+      "asic_bw_port": "48 x 25G-SFP28 & 8 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.2.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf11",
+      "tier": "1",
+      "count_alarm": 10,
+      "count_warning": 4,
+      "count_info": 4,
+      "count_debug": 4,
+      "board_vendor": "HPE",
+      "board_model": "Altoline 6700-32QSFP+",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "leaf12",
+      "tier": "1",
+      "count_alarm": 0,
+      "count_warning": 5,
+      "count_info": 10,
+      "count_debug": 1,
+      "board_vendor": "Mellanox",
+      "board_model": "SN2740",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.6.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        },
+        {
+          "name": "swp53"
+        },
+        {
+          "name": "swp54"
+        }
+      ]
+    },
+    {
+      "name": "spine05",
+      "tier": "2",
+      "count_alarm": 2,
+      "count_warning": 3,
+      "count_info": 9,
+      "count_debug": 8,
+      "board_vendor": "HPE",
+      "board_model": "Altoline 6960",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.6.4",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "spine06",
+      "tier": "2",
+      "count_alarm": 5,
+      "count_warning": 9,
+      "count_info": 3,
+      "count_debug": 3,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T3048-LY7",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Maverick",
+      "asic_bw_port": "48 x 10G-SFP+ & 4 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit05",
+      "tier": "4",
+      "count_alarm": 4,
+      "count_warning": 7,
+      "count_info": 9,
+      "count_debug": 6,
+      "board_vendor": "EdgeCore",
+      "board_model": "AS4600-54T",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Apollo2",
+      "asic_bw_port": "48 x 1G-T & 4 x 10G-SFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit06",
+      "tier": "4",
+      "count_alarm": 8,
+      "count_warning": 5,
+      "count_info": 7,
+      "count_debug": 5,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 4808xs",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "48 x 10G-SFP+ & 8 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "ring01",
+      "tier": "5",
+      "count_alarm": 6,
+      "count_warning": 6,
+      "count_info": 2,
+      "count_debug": 4,
+      "board_vendor": "Dell",
+      "board_model": "Z9100-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        }
+      ]
+    },
+    {
+      "name": "ring02",
+      "tier": "5",
+      "count_alarm": 10,
+      "count_warning": 10,
+      "count_info": 0,
+      "count_debug": 7,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh T1048-LY4R",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Hurricane2",
+      "asic_bw_port": "48 x 1G-T & 4 x 10G-SFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp17"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp5"
+        },
+        {
+          "name": "swp6"
+        }
+      ]
+    },
+    {
+      "name": "ring03",
+      "tier": "5",
+      "count_alarm": 4,
+      "count_warning": 8,
+      "count_info": 9,
+      "count_debug": 3,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 3200c",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.2.2",
+      "interfaces": [
+        {
+          "name": "swp17"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        }
+      ]
+    },
+    {
+      "name": "ring04",
+      "tier": "5",
+      "count_alarm": 1,
+      "count_warning": 4,
+      "count_info": 2,
+      "count_debug": 1,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T7032-IX1",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp17"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        }
+      ]
+    },
+    {
+      "name": "ring05",
+      "tier": "5",
+      "count_alarm": 10,
+      "count_warning": 7,
+      "count_info": 9,
+      "count_debug": 4,
+      "board_vendor": "Dell",
+      "board_model": "S4148T-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Maverick",
+      "asic_bw_port": "48 x 10G-T & 2 x 40G-QSFP+ & 4 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp17"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        }
+      ]
+    },
+    {
+      "name": "ring06",
+      "tier": "5",
+      "count_alarm": 7,
+      "count_warning": 7,
+      "count_info": 9,
+      "count_debug": 3,
+      "board_vendor": "Facebook",
+      "board_model": "Voyager",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "12 x 100G-QSFP28 & 4 x 200G-Coherent",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp17"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        }
+      ]
+    },
+    {
+      "name": "printer01",
+      "tier": "0",
+      "count_alarm": 2,
+      "count_warning": 3,
+      "count_info": 2,
+      "count_debug": 1,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    },
+    {
+      "name": "phone01",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 1,
+      "count_info": 2,
+      "count_debug": 0,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    },
+    {
+      "name": "access01",
+      "tier": "1",
+      "count_alarm": 9,
+      "count_warning": 5,
+      "count_info": 3,
+      "count_debug": 9,
+      "board_vendor": "HPE",
+      "board_model": "Altoline 6960",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access02",
+      "tier": "1",
+      "count_alarm": 6,
+      "count_warning": 0,
+      "count_info": 3,
+      "count_debug": 3,
+      "board_vendor": "HPE",
+      "board_model": "Altoline 6700-32QSFP+",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.6.2",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access03",
+      "tier": "1",
+      "count_alarm": 10,
+      "count_warning": 5,
+      "count_info": 3,
+      "count_debug": 10,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T5032-LY6",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.2.1",
+      "interfaces": [
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access04",
+      "tier": "1",
+      "count_alarm": 1,
+      "count_warning": 0,
+      "count_info": 1,
+      "count_debug": 7,
+      "board_vendor": "Dell",
+      "board_model": "S4128F-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Maverick",
+      "asic_bw_port": "28 x 10G-SFP+ & 2 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.3.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access05",
+      "tier": "1",
+      "count_alarm": 8,
+      "count_warning": 10,
+      "count_info": 3,
+      "count_debug": 7,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 4808xs",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "48 x 10G-SFP+ & 8 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "dist01",
+      "tier": "2",
+      "count_alarm": 0,
+      "count_warning": 1,
+      "count_info": 1,
+      "count_debug": 5,
+      "board_vendor": "Supermicro",
+      "board_model": "SSE-C3632S",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "dist02",
+      "tier": "2",
+      "count_alarm": 4,
+      "count_warning": 3,
+      "count_info": 7,
+      "count_debug": 6,
+      "board_vendor": "EdgeCore",
+      "board_model": "OMP-800",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "256 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "dist03",
+      "tier": "2",
+      "count_alarm": 10,
+      "count_warning": 2,
+      "count_info": 10,
+      "count_debug": 7,
+      "board_vendor": "Dell",
+      "board_model": "S5048F-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk+",
+      "asic_bw_port": "48 x 25G-SFP28 & 6 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.6.3",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "dist04",
+      "tier": "2",
+      "count_alarm": 8,
+      "count_warning": 2,
+      "count_info": 6,
+      "count_debug": 7,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T7032-IX7",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident3",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.6.2",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "core01",
+      "tier": "3",
+      "count_alarm": 2,
+      "count_warning": 9,
+      "count_info": 0,
+      "count_debug": 3,
+      "board_vendor": "HPE",
+      "board_model": "Altoline 6700-32QSFP+",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "core02",
+      "tier": "3",
+      "count_alarm": 7,
+      "count_warning": 6,
+      "count_info": 9,
+      "count_debug": 7,
+      "board_vendor": "EdgeCore",
+      "board_model": "AS7712-32X",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.7.4",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit07",
+      "tier": "4",
+      "count_alarm": 10,
+      "count_warning": 5,
+      "count_info": 3,
+      "count_debug": 6,
+      "board_vendor": "Mellanox",
+      "board_model": "SN2100",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "16 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        }
+      ]
+    },
+    {
+      "name": "exit08",
+      "tier": "4",
+      "count_alarm": 8,
+      "count_warning": 7,
+      "count_info": 8,
+      "count_debug": 2,
+      "board_vendor": "Mellanox",
+      "board_model": "SN2010",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "18 x 25G-SFP28 & 4 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.3.4",
+      "interfaces": [
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        }
+      ]
+    },
+    {
+      "name": "printer02",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 3,
+      "count_info": 2,
+      "count_debug": 3,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    },
+    {
+      "name": "phone02",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 2,
+      "count_info": 3,
+      "count_debug": 0,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    },
+    {
+      "name": "access06",
+      "tier": "1",
+      "count_alarm": 9,
+      "count_warning": 10,
+      "count_info": 1,
+      "count_debug": 2,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 4804x",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident+",
+      "asic_bw_port": "48 x 10G-SFP+ & 4 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access07",
+      "tier": "1",
+      "count_alarm": 0,
+      "count_warning": 3,
+      "count_info": 4,
+      "count_debug": 7,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 4804x",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident+",
+      "asic_bw_port": "48 x 10G-SFP+ & 4 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.2.2",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access08",
+      "tier": "1",
+      "count_alarm": 8,
+      "count_warning": 3,
+      "count_info": 1,
+      "count_debug": 3,
+      "board_vendor": "Dell",
+      "board_model": "S6010-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2+",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access09",
+      "tier": "1",
+      "count_alarm": 3,
+      "count_warning": 7,
+      "count_info": 1,
+      "count_debug": 3,
+      "board_vendor": "EdgeCore",
+      "board_model": "AS4610-54T",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Helix4",
+      "asic_bw_port": "48 x 1G-T & 4 x 10G-SFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "access10",
+      "tier": "1",
+      "count_alarm": 0,
+      "count_warning": 4,
+      "count_info": 1,
+      "count_debug": 9,
+      "board_vendor": "QCT",
+      "board_model": "QuantaMesh BMS T4048-IX2",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "48 x 25G-SFP28 & 8 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp49"
+        },
+        {
+          "name": "swp50"
+        }
+      ]
+    },
+    {
+      "name": "dist05",
+      "tier": "2",
+      "count_alarm": 3,
+      "count_warning": 2,
+      "count_info": 9,
+      "count_debug": 8,
+      "board_vendor": "Dell",
+      "board_model": "Z9100-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.1.2",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "dist06",
+      "tier": "2",
+      "count_alarm": 9,
+      "count_warning": 6,
+      "count_info": 7,
+      "count_debug": 5,
+      "board_vendor": "Penguin",
+      "board_model": "Arctica 3200cs",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "32 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "dist07",
+      "tier": "2",
+      "count_alarm": 5,
+      "count_warning": 0,
+      "count_info": 8,
+      "count_debug": 3,
+      "board_vendor": "Dell",
+      "board_model": "S6000-ON",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "1.1.4",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "dist08",
+      "tier": "2",
+      "count_alarm": 2,
+      "count_warning": 6,
+      "count_info": 4,
+      "count_debug": 3,
+      "board_vendor": "Mellanox",
+      "board_model": "SN2410B",
+      "asic_vendor": "Mellanox",
+      "asic_model": "Spectrum",
+      "asic_bw_port": "48 x 10G-SFP+ & 8 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp16"
+        },
+        {
+          "name": "swp17"
+        }
+      ]
+    },
+    {
+      "name": "core03",
+      "tier": "3",
+      "count_alarm": 10,
+      "count_warning": 8,
+      "count_info": 8,
+      "count_debug": 2,
+      "board_vendor": "Lenovo",
+      "board_model": "NE2572O",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Tomahawk+",
+      "asic_bw_port": "48 x 25G-SFP28 & 6 x 100G-QSFP28",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "core04",
+      "tier": "3",
+      "count_alarm": 8,
+      "count_warning": 0,
+      "count_info": 5,
+      "count_debug": 0,
+      "board_vendor": "Delta",
+      "board_model": "AG-7448CU",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident",
+      "asic_bw_port": "48 x 10G-SFP+ & 4 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "2.2.4",
+      "interfaces": [
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        },
+        {
+          "name": "swp3"
+        },
+        {
+          "name": "swp4"
+        },
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        }
+      ]
+    },
+    {
+      "name": "exit09",
+      "tier": "4",
+      "count_alarm": 7,
+      "count_warning": 10,
+      "count_info": 9,
+      "count_debug": 3,
+      "board_vendor": "EdgeCore",
+      "board_model": "AS4600-54T",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Apollo2",
+      "asic_bw_port": "48 x 1G-T & 4 x 10G-SFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.7.1",
+      "interfaces": [
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        }
+      ]
+    },
+    {
+      "name": "exit10",
+      "tier": "4",
+      "count_alarm": 7,
+      "count_warning": 1,
+      "count_info": 3,
+      "count_debug": 1,
+      "board_vendor": "EdgeCore",
+      "board_model": "AS6701-32X",
+      "asic_vendor": "Broadcom",
+      "asic_model": "Trident2",
+      "asic_bw_port": "32 x 40G-QSFP+",
+      "os_name": "Cumulus Linux",
+      "os_version": "3.5.3",
+      "interfaces": [
+        {
+          "name": "swp31"
+        },
+        {
+          "name": "swp32"
+        },
+        {
+          "name": "swp1"
+        },
+        {
+          "name": "swp2"
+        }
+      ]
+    },
+    {
+      "name": "laptop01",
+      "tier": "0",
+      "count_alarm": 2,
+      "count_warning": 3,
+      "count_info": 3,
+      "count_debug": 1,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    },
+    {
+      "name": "laptop02",
+      "tier": "0",
+      "count_alarm": 1,
+      "count_warning": 1,
+      "count_info": 3,
+      "count_debug": 3,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    },
+    {
+      "name": "laptop03",
+      "tier": "0",
+      "count_alarm": 0,
+      "count_warning": 2,
+      "count_info": 3,
+      "count_debug": 1,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    },
+    {
+      "name": "laptop04",
+      "tier": "0",
+      "count_alarm": 2,
+      "count_warning": 2,
+      "count_info": 3,
+      "count_debug": 2,
+      "interfaces": [
+        {
+          "name": "eth1"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "interfaces": [
+        {
+          "node": "server01",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf01",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server01",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf02",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server02",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf01",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server02",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf02",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server03",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf03",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server03",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf04",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server04",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf03",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server04",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf04",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf01",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine01",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf01",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine02",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf02",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine01",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf02",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine02",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf03",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine01",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf03",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine02",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf04",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine01",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf04",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine02",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf01",
+          "interface": "swp53"
+        },
+        {
+          "node": "leaf02",
+          "interface": "swp53"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf01",
+          "interface": "swp54"
+        },
+        {
+          "node": "leaf02",
+          "interface": "swp54"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf03",
+          "interface": "swp53"
+        },
+        {
+          "node": "leaf04",
+          "interface": "swp53"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf03",
+          "interface": "swp54"
+        },
+        {
+          "node": "leaf04",
+          "interface": "swp54"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine01",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit01",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine01",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit02",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine02",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit01",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine02",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit02",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server05",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf05",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server05",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf06",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server06",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf05",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server06",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf06",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server07",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf07",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server07",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf08",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server08",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf07",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server08",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf08",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf05",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine03",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf05",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine04",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf06",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine03",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf06",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine04",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf07",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine03",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf07",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine04",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf08",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine03",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf08",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine04",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf05",
+          "interface": "swp53"
+        },
+        {
+          "node": "leaf06",
+          "interface": "swp53"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf05",
+          "interface": "swp54"
+        },
+        {
+          "node": "leaf06",
+          "interface": "swp54"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf07",
+          "interface": "swp53"
+        },
+        {
+          "node": "leaf08",
+          "interface": "swp53"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf07",
+          "interface": "swp54"
+        },
+        {
+          "node": "leaf08",
+          "interface": "swp54"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine03",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit03",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine03",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit04",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine04",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit03",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine04",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit04",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server09",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf09",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server09",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf10",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server10",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf09",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server10",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf10",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server11",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf11",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server11",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf12",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server12",
+          "interface": "eth1"
+        },
+        {
+          "node": "leaf11",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "server12",
+          "interface": "eth2"
+        },
+        {
+          "node": "leaf12",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf09",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine05",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf09",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine06",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf10",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine05",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf10",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine06",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf11",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine05",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf11",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine06",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf12",
+          "interface": "swp49"
+        },
+        {
+          "node": "spine05",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf12",
+          "interface": "swp50"
+        },
+        {
+          "node": "spine06",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf09",
+          "interface": "swp53"
+        },
+        {
+          "node": "leaf10",
+          "interface": "swp53"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf09",
+          "interface": "swp54"
+        },
+        {
+          "node": "leaf10",
+          "interface": "swp54"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf11",
+          "interface": "swp53"
+        },
+        {
+          "node": "leaf12",
+          "interface": "swp53"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "leaf11",
+          "interface": "swp54"
+        },
+        {
+          "node": "leaf12",
+          "interface": "swp54"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine05",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit05",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine05",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit06",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine06",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit05",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "spine06",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit06",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring01",
+          "interface": "swp16"
+        },
+        {
+          "node": "ring02",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring02",
+          "interface": "swp16"
+        },
+        {
+          "node": "ring03",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring03",
+          "interface": "swp16"
+        },
+        {
+          "node": "ring06",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring06",
+          "interface": "swp16"
+        },
+        {
+          "node": "ring05",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring05",
+          "interface": "swp16"
+        },
+        {
+          "node": "ring04",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring04",
+          "interface": "swp16"
+        },
+        {
+          "node": "ring01",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring01",
+          "interface": "swp1"
+        },
+        {
+          "node": "exit01",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring01",
+          "interface": "swp2"
+        },
+        {
+          "node": "exit02",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring02",
+          "interface": "swp1"
+        },
+        {
+          "node": "exit01",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring02",
+          "interface": "swp2"
+        },
+        {
+          "node": "exit02",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring02",
+          "interface": "swp3"
+        },
+        {
+          "node": "exit03",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring02",
+          "interface": "swp4"
+        },
+        {
+          "node": "exit04",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring02",
+          "interface": "swp5"
+        },
+        {
+          "node": "exit05",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring02",
+          "interface": "swp6"
+        },
+        {
+          "node": "exit06",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring03",
+          "interface": "swp1"
+        },
+        {
+          "node": "exit03",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring03",
+          "interface": "swp2"
+        },
+        {
+          "node": "exit04",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring03",
+          "interface": "swp3"
+        },
+        {
+          "node": "exit05",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring03",
+          "interface": "swp4"
+        },
+        {
+          "node": "exit06",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring04",
+          "interface": "swp1"
+        },
+        {
+          "node": "exit07",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring04",
+          "interface": "swp2"
+        },
+        {
+          "node": "exit08",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring05",
+          "interface": "swp1"
+        },
+        {
+          "node": "exit07",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring05",
+          "interface": "swp2"
+        },
+        {
+          "node": "exit08",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring05",
+          "interface": "swp3"
+        },
+        {
+          "node": "exit09",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring05",
+          "interface": "swp4"
+        },
+        {
+          "node": "exit10",
+          "interface": "swp31"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring06",
+          "interface": "swp1"
+        },
+        {
+          "node": "exit09",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "ring06",
+          "interface": "swp2"
+        },
+        {
+          "node": "exit10",
+          "interface": "swp32"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "printer01",
+          "interface": "eth1"
+        },
+        {
+          "node": "access02",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "phone01",
+          "interface": "eth1"
+        },
+        {
+          "node": "access05",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "laptop01",
+          "interface": "eth1"
+        },
+        {
+          "node": "access01",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "laptop02",
+          "interface": "eth1"
+        },
+        {
+          "node": "access04",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access01",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist01",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access01",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist02",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access02",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist01",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access02",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist02",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access03",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist01",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access03",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist02",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access04",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist03",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access04",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist04",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access05",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist03",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access05",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist04",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist01",
+          "interface": "swp31"
+        },
+        {
+          "node": "core01",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist01",
+          "interface": "swp32"
+        },
+        {
+          "node": "core02",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist02",
+          "interface": "swp31"
+        },
+        {
+          "node": "core01",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist02",
+          "interface": "swp32"
+        },
+        {
+          "node": "core02",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist03",
+          "interface": "swp31"
+        },
+        {
+          "node": "core01",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist03",
+          "interface": "swp32"
+        },
+        {
+          "node": "core02",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist04",
+          "interface": "swp31"
+        },
+        {
+          "node": "core01",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist04",
+          "interface": "swp32"
+        },
+        {
+          "node": "core02",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist01",
+          "interface": "swp16"
+        },
+        {
+          "node": "dist02",
+          "interface": "swp16"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist01",
+          "interface": "swp17"
+        },
+        {
+          "node": "dist02",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist03",
+          "interface": "swp16"
+        },
+        {
+          "node": "dist04",
+          "interface": "swp16"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist03",
+          "interface": "swp17"
+        },
+        {
+          "node": "dist04",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core01",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit07",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core01",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit08",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core02",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit07",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core02",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit08",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "printer02",
+          "interface": "eth1"
+        },
+        {
+          "node": "access07",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "phone02",
+          "interface": "eth1"
+        },
+        {
+          "node": "access10",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "laptop03",
+          "interface": "eth1"
+        },
+        {
+          "node": "access06",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "laptop04",
+          "interface": "eth1"
+        },
+        {
+          "node": "access09",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access06",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist05",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access06",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist06",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access07",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist05",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access07",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist06",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access08",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist05",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access08",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist06",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access09",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist07",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access09",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist08",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access10",
+          "interface": "swp49"
+        },
+        {
+          "node": "dist07",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "access10",
+          "interface": "swp50"
+        },
+        {
+          "node": "dist08",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist05",
+          "interface": "swp31"
+        },
+        {
+          "node": "core03",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist05",
+          "interface": "swp32"
+        },
+        {
+          "node": "core04",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist06",
+          "interface": "swp31"
+        },
+        {
+          "node": "core03",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist06",
+          "interface": "swp32"
+        },
+        {
+          "node": "core04",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist07",
+          "interface": "swp31"
+        },
+        {
+          "node": "core03",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist07",
+          "interface": "swp32"
+        },
+        {
+          "node": "core04",
+          "interface": "swp3"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist08",
+          "interface": "swp31"
+        },
+        {
+          "node": "core03",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist08",
+          "interface": "swp32"
+        },
+        {
+          "node": "core04",
+          "interface": "swp4"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist05",
+          "interface": "swp16"
+        },
+        {
+          "node": "dist06",
+          "interface": "swp16"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist05",
+          "interface": "swp17"
+        },
+        {
+          "node": "dist06",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist07",
+          "interface": "swp16"
+        },
+        {
+          "node": "dist08",
+          "interface": "swp16"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "dist07",
+          "interface": "swp17"
+        },
+        {
+          "node": "dist08",
+          "interface": "swp17"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core03",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit09",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core03",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit10",
+          "interface": "swp1"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core04",
+          "interface": "swp31"
+        },
+        {
+          "node": "exit09",
+          "interface": "swp2"
+        }
+      ]
+    },
+    {
+      "interfaces": [
+        {
+          "node": "core04",
+          "interface": "swp32"
+        },
+        {
+          "node": "exit10",
+          "interface": "swp2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+ - on zoom
+ - grouping
+ - rectangle
+ - icons

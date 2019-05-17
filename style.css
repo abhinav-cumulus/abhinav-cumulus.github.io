@@ -1,0 +1,22 @@
+.link {
+  stroke: #aaa;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node text {
+  font-size: 11px;
+  font-family: monospace;
+}
+
+#node-desc {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  width: 200px;
+  height: 100%;
+  border-left: 1px solid #aaa;
+}

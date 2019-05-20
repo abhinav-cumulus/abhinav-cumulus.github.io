@@ -23,20 +23,22 @@ closeBtn.on("click", () => descBar.style("display", "none"));
 d3.select("run-btn").click = run;
 
 function run() {
-  let fileName = d3.select("#json-select").value;
-  console.log(d3.select("#json-select"));
-  d3.json("sample-2-tier-clos.json").then(function (data) {
+  document.getElementById("viz").innerHTML = '';
+  let fileName = document.getElementById("json-select").value;
+  let layoutType = document.getElementById("layout-select").value;
+  let shortenNodes = document.getElementById("shorten-nodes-select").checked;
+
+  d3.json(fileName).then(function (data) {
 
     var graph = {};
 
-    graph.nodes = data.nodes.map(n => ({ id: n.name, group: n.tier, weight: parseInt(n.tier) + Math.random() * 0.25, data: { ...n } }));
+    graph.nodes = data.nodes.map(n => ({ id: n.name, group: parseInt(n.tier), weight: parseInt(n.tier) + Math.random() * 0.25, data: { ...n } }));
     graph.links = data.links.map(l => ({ source: l.interfaces[0].node, target: l.interfaces[1].node, value: 1 }));
 
     graph.links.forEach(l => {
       let source = graph.nodes.find(n => n.id === l.source);
       let target = graph.nodes.find(n => n.id === l.target);
       let parent, child;
-
 
       if (source.group > target.group) {
         parent = source;
@@ -47,15 +49,16 @@ function run() {
       }
       if (parent && child) {
         parent.numOfChildren = (parent.numOfChildren || 0) + 1;
-        parent.chidren = (parent.chidren || []).concat(child.id);
-        child.parent = source.id;
+        parent.children = (parent.children || []).concat(child.id);
+        child.parents = (child.parents || []).concat(parent.id);
       }
     });
 
+    graph.nodes.forEach(n => console.log(n));
 
     graph.nodes.forEach(node => {
-      if (node.numOfChildren > 6) {
-        node.chidren
+      if (node.numOfChildren > 6 && shortenNodes) {
+        node.children
           .map(id => graph.nodes.find(n => n.id == id))
           .forEach(n => {
             n.hideLabel = true;
@@ -64,24 +67,7 @@ function run() {
       }
     });
 
-    console.log(graph.nodes);
 
-
-
-    //setNumOfSiblings
-
-    const setNumOfSiblings = () => {
-
-    }
-
-
-
-
-
-    var label = {
-      'nodes': [],
-      'links': []
-    };
 
     // graph.nodes.forEach(function (d, i) {
     //   label.nodes.push({ node: d });
@@ -98,16 +84,22 @@ function run() {
 
     selectiveGravity = () => {
       graph.nodes.forEach((d) => {
-        d.y = height - d.weight * 100 - 500;
+        d.y = height - d.weight * 100 - 100;
       })
+    }
+
+    let yForce;
+    if (layoutType == 'Radial') {
+      yForce = d3.forceY(height / 2).strength(1);
+    } else if (layoutType == 'Hierarchical') {
+      yForce = selectiveGravity;
     }
 
     graphLayout = d3.forceSimulation(graph.nodes)
       .force("charge", d3.forceManyBody().strength(-5000))
       .force("center", d3.forceCenter(width / 2, height / 2))
       .force("x", d3.forceX(width / 2).strength(1))
-      .force("y", selectiveGravity)
-      // .force("y", d3.forceY(height / 2).strength(1))
+      .force("y", yForce)
       .force("link", d3.forceLink(graph.links).id(function (d) { return d.id; }).distance(50).strength(1))
       .on("tick", ticked);
 
@@ -117,12 +109,6 @@ function run() {
       adjlist[d.source.index + "-" + d.target.index] = true;
       adjlist[d.target.index + "-" + d.source.index] = true;
     });
-
-
-
-    graph.nodes.forEach(n => {
-      console.log(n);
-    })
 
     function neigh(a, b) {
       return a == b || adjlist[a + "-" + b];
@@ -229,8 +215,9 @@ function run() {
 
     node.on("click", handleClick);
 
-    function handleClick(node) {
-      console.log('called', node.data);
+    function handleClick(curr) {
+      
+      node.select("circle").attr("stroke", d => d.id == curr.id ? "blue" : "#ddd");
       var htmlString = '';
       [
         "name",
@@ -246,8 +233,18 @@ function run() {
         "count_debug",
         "count_info",
         "count_warning",
-      ].forEach(key => htmlString += '<b>' + key.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') + ':</b>' + ' ' + node.data[key] + '</br>')
-      d3.select('#node-desc').select("#details").html(htmlString);
+      ].forEach(key => htmlString += key.split('_')
+        .map(w => `<b> ${w.charAt(0).toUpperCase() + w.slice(1)}:</b> ${curr.data[key]} </br>`)
+        .join(' '));
+
+      herirchicalData = '<h3>Parents</h3>';
+      herirchicalData += curr.parents && curr.parents.map(p => `<div> - ${p} </div>`).join(' ');
+
+      herirchicalData += '<h3>Children</h3>';
+      herirchicalData += curr.children && curr.children.map(c => `<div> - ${c} </div>`).join(' ');
+
+
+      d3.select('#node-desc').select("#details").html(htmlString + herirchicalData + '<br/>');
       descBar.style("display", "block");
     }
 

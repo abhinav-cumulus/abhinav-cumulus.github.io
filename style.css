@@ -20,8 +20,16 @@
   height: 100%;
   border-left: 1px solid #aaa;
   padding: 10px;
+  overflow: scroll;
 }
 
 #node-desc h2 {
   display: inline-block;
 }
+
+#run-btn {
+  background-color: blue;
+  color: white;
+}
+
+

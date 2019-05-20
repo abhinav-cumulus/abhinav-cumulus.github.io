@@ -123,7 +123,7 @@ function run() {
         .scaleExtent([.1, 4])
         .on("zoom", function (x) {
           container.attr("transform", d3.event.transform);
-          if (d3.event.transform.k < 0.6) {
+          if (d3.event.transform.k < 0.85) {
             hideLabels();
           } else {
             showLabels();

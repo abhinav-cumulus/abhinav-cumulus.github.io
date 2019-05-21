@@ -30,6 +30,7 @@ function run() {
   let fileName = document.getElementById("json-select").value;
   let layoutType = document.getElementById("layout-select").value;
   let shortenNodes = document.getElementById("shorten-nodes-select").checked;
+  let implementFisheye = document.getElementById("fisheye-select").checked;
 
   d3.json(fileName).then(function (data) {
 
@@ -184,44 +185,48 @@ function run() {
     // node
 
     //   .select('text')
-    svg.on("mousemove", function () {
-      console.log("mouse moving");
-      fisheye.focus(d3.mouse(this));
+    if (implementFisheye) {
+      svg.on("mousemove", function () {
+        console.log("mouse moving");
+        fisheye.focus(d3.mouse(this));
 
-      var mouseX = d3.mouse(this)[0];
-      var mouseY = d3.mouse(this)[1];
-      var r = fisheye.radius();
+        var mouseX = d3.mouse(this)[0];
+        var mouseY = d3.mouse(this)[1];
+        var r = fisheye.radius();
 
-      // node
-      //   .select("circle")
-      //   .each(function (d) {
-      //     // console.log(d);
-      //     d.fisheye = fisheye(d);
-      //   })
-      //   .attr("cx", function (d) { return d.fisheye.x; })
-      //   .attr("cy", function (d) { return d.fisheye.y; })
-      //   .attr("r", function (d) { return d.fisheye.z * 20; });
+        // node
+        //   .select("circle")
+        //   .each(function (d) {
+        //     // console.log(d);
+        //     d.fisheye = fisheye(d);
+        //   })
+        //   .attr("cx", function (d) { return d.fisheye.x; })
+        //   .attr("cy", function (d) { return d.fisheye.y; })
+        //   .attr("r", function (d) { return d.fisheye.z * 20; });
 
-      node
-        .each(function (d) {
-          // console.log(d);
-          d.fisheye = fisheye(d);
-        })
-        .attr("transform", function (d) {
-          return "translate(" + d.fisheye.x + "," + d.fisheye.y + ")";
-        })
-        .select("circle")
-        .attr("r", function (d) { 
-          return d.fisheye.z * (d.shortenNodeSize ? 5 : 15); 
-        })
-        ;
+        node
+          .each(function (d) {
+            // console.log(d);
+            d.fisheye = fisheye(d);
+          })
+          .attr("transform", function (d) {
+            return "translate(" + d.fisheye.x + "," + d.fisheye.y + ")";
+          })
+          .select("circle")
+          .attr("r", function (d) {
+            return d.fisheye.z * (d.shortenNodeSize ? 5 : 15);
+          })
+          ;
 
-      link.attr("x1", function (d) { return d.source.fisheye.x; })
-        .attr("y1", function (d) { return d.source.fisheye.y; })
-        .attr("x2", function (d) { return d.target.fisheye.x; })
-        .attr("y2", function (d) { return d.target.fisheye.y; });
+        link.attr("x1", function (d) { return d.source.fisheye.x; })
+          .attr("y1", function (d) { return d.source.fisheye.y; })
+          .attr("x2", function (d) { return d.target.fisheye.x; })
+          .attr("y2", function (d) { return d.target.fisheye.y; });
 
-    });
+      });
+    } else {
+      svg.on("mousemove", null);
+    }
 
     // node.append("text")
     //   .text(d => d.id)

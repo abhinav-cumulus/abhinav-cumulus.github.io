@@ -6,6 +6,9 @@ var tooltip = d3.select("body").append("div")
   .style("opacity", 0);
 var maxNumOfSiblings = 7;
 var node;
+var fisheye = d3.fisheye.circular()
+  .radius(100)
+  .distortion(5);
 
 var descBar = d3.select('#node-desc');
 var closeBtn = descBar.select('#close');
@@ -54,7 +57,7 @@ function run() {
       }
     });
 
-    graph.nodes.forEach(n => console.log(n));
+    // graph.nodes.forEach(n => console.log(n));
 
     graph.nodes.forEach(node => {
       if (node.numOfChildren > 6 && shortenNodes) {
@@ -131,6 +134,8 @@ function run() {
         })
     );
 
+
+
     function hideLabels() {
       node.select('text').attr('display', 'none');
     }
@@ -179,7 +184,44 @@ function run() {
     // node
 
     //   .select('text')
+    svg.on("mousemove", function () {
+      console.log("mouse moving");
+      fisheye.focus(d3.mouse(this));
 
+      var mouseX = d3.mouse(this)[0];
+      var mouseY = d3.mouse(this)[1];
+      var r = fisheye.radius();
+
+      // node
+      //   .select("circle")
+      //   .each(function (d) {
+      //     // console.log(d);
+      //     d.fisheye = fisheye(d);
+      //   })
+      //   .attr("cx", function (d) { return d.fisheye.x; })
+      //   .attr("cy", function (d) { return d.fisheye.y; })
+      //   .attr("r", function (d) { return d.fisheye.z * 20; });
+
+      node
+        .each(function (d) {
+          // console.log(d);
+          d.fisheye = fisheye(d);
+        })
+        .attr("transform", function (d) {
+          return "translate(" + d.fisheye.x + "," + d.fisheye.y + ")";
+        })
+        .select("circle")
+        .attr("r", function (d) { 
+          return d.fisheye.z * (d.shortenNodeSize ? 5 : 15); 
+        })
+        ;
+
+      link.attr("x1", function (d) { return d.source.fisheye.x; })
+        .attr("y1", function (d) { return d.source.fisheye.y; })
+        .attr("x2", function (d) { return d.target.fisheye.x; })
+        .attr("y2", function (d) { return d.target.fisheye.y; });
+
+    });
 
     // node.append("text")
     //   .text(d => d.id)
@@ -216,7 +258,7 @@ function run() {
     node.on("click", handleClick);
 
     function handleClick(curr) {
-      
+
       node.select("circle").attr("stroke", d => d.id == curr.id ? "blue" : "#ddd");
       var htmlString = '';
       [
@@ -318,7 +360,7 @@ function run() {
     }
 
     function dragstarted(d) {
-      console.log('started')
+      // console.log('started')
       d3.event.sourceEvent.stopPropagation();
       if (!d3.event.active) graphLayout.alphaTarget(0.3).restart();
       d.fx = d.x;

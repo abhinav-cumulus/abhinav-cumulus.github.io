@@ -51,10 +51,10 @@ function run() {
             n.tier = 3;
             break;
           case 'host':
-            n.tier = 1;
+            n.tier = 0;
             break;
           case 'firewall':
-            n.tier = 0;
+            n.tier = 1;
             break;
         }
       })
@@ -99,8 +99,6 @@ function run() {
         n.shortenNodeSize = true;
       }
     });
-
-
 
     graph.links.forEach(l => {
       let source = graph.nodes.find(n => n.id === l.source);

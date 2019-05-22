@@ -69,11 +69,11 @@ function run() {
         else if(name.search(/nqcb(.*)leaf(.*)/i) !== -1) {
           node.tier = 4;
         }
-        else if(name.search(/hosts-(.*)/i) !== -1) {
-          node.tier = 3;
-        } 
         else if(name.search(/hosts-(.*)-(.*)/i) !== -1) {
           node.tier = 2;
+        } 
+        else if(name.search(/hosts-(.*)/i) !== -1) {
+          node.tier = 3;
         } 
         console.log(name, node.tier)
       })

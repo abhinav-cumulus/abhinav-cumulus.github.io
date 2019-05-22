@@ -85,6 +85,23 @@ function run() {
     graph.nodes = data.nodes.map(n => ({ id: n.name, group: parseInt(n.tier), weight: parseInt(n.tier) + Math.random() * 0.25, data: { ...n } }));
     graph.links = data.links.map(l => ({ source: l.interfaces[0].node, target: l.interfaces[1].node, value: 1 }));
 
+    nodesAtEachTier = [];
+
+    graph.nodes.forEach(n => {
+      nodesAtEachTier[n.group] = !nodesAtEachTier[n.group] ? 1 : nodesAtEachTier[n.group] + 1;
+    });
+
+    console.log(nodesAtEachTier);
+
+    graph.nodes.forEach(n => {
+      if(nodesAtEachTier[n.group] > 20) {
+        n.hideLabel = true;
+        n.shortenNodeSize = true;
+      }
+    });
+
+
+
     graph.links.forEach(l => {
       let source = graph.nodes.find(n => n.id === l.source);
       let target = graph.nodes.find(n => n.id === l.target);
@@ -106,16 +123,16 @@ function run() {
 
     // graph.nodes.forEach(n => console.log(n));
 
-    graph.nodes.forEach(node => {
-      if (node.numOfChildren > 6 && shortenNodes) {
-        node.children
-          .map(id => graph.nodes.find(n => n.id == id))
-          .forEach(n => {
-            n.hideLabel = true;
-            n.shortenNodeSize = true;
-          });
-      }
-    });
+    // graph.nodes.forEach(node => {
+    //   if (node.numOfChildren > 6 && shortenNodes) {
+    //     node.children
+    //       .map(id => graph.nodes.find(n => n.id == id))
+    //       .forEach(n => {
+    //         n.hideLabel = true;
+    //         n.shortenNodeSize = true;
+    //       });
+    //   }
+    // });
 
 
 

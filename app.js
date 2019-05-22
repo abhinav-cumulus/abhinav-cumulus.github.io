@@ -34,6 +34,33 @@ function run() {
 
   d3.json(fileName).then(function (data) {
 
+    if(fileName == '2ea.json') {
+      data.nodes.forEach(n => {
+    
+        switch(n.name.split('-')[0]) {
+          case 'noc':
+            n.tier = 5;
+            break;
+          case 'spine':
+            n.tier = 4;
+            break;
+          case 'tor':
+            n.tier = 3;
+            break;
+          case 'torc':
+            n.tier = 2;
+            break;
+          case 'host':
+            n.tier = 1;
+            break;
+          case 'firewall':
+            n.tier = 0;
+            break;
+        }
+      })
+    }
+
+
     var graph = {};
 
     graph.nodes = data.nodes.map(n => ({ id: n.name, group: parseInt(n.tier), weight: parseInt(n.tier) + Math.random() * 0.25, data: { ...n } }));

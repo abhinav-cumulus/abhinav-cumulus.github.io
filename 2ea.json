@@ -1,0 +1,3374 @@
+{
+   "nodes" : [
+      {
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "evpn" : false,
+            "vni" : [],
+            "clag" : false
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "inventory" : {
+            "netq_agent_version" : "2.1.1-ub16.04u16~1556839512.e4ce0d1",
+            "platform" : "N/A N/A",
+            "os" : "Ubuntu 16.04.1 LTS (Xenial Xerus)",
+            "asic" : "N/A N/A",
+            "license_state" : "N/A"
+         },
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "interface" : "swp23",
+                  "node" : "noc-se",
+                  "link" : 50
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "interface" : "swp23",
+                  "node" : "noc-pr",
+                  "link" : 81
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp6",
+                  "node" : "tor-2",
+                  "link" : 38
+               },
+               "name" : "swp1"
+            }
+         ],
+         "name" : "hosts-21",
+         "tier" : 0
+      },
+      {
+         "inventory" : {
+            "os" : "CL F.2.0",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "F Systems F_VX",
+            "asic" : "FF Inc F-Z",
+            "license_state" : "bad"
+         },
+         "protocol" : {
+            "lldp" : true,
+            "bgp" : false,
+            "clag" : false,
+            "evpn" : false,
+            "vni" : []
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "interfaces" : [
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "link" : 1,
+                  "node" : "spine-1",
+                  "interface" : "swp8"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "spine-3",
+                  "link" : 41,
+                  "interface" : "swp8"
+               },
+               "name" : "swp5"
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp8",
+                  "link" : 36,
+                  "node" : "spine-2"
+               }
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "node" : "hosts-21",
+                  "link" : 38,
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "hosts-23",
+                  "link" : 2,
+                  "interface" : "swp1"
+               },
+               "name" : "swp8"
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "node" : "hosts-22",
+                  "link" : 11,
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "node" : "noc-se",
+                  "link" : 24,
+                  "interface" : "swp4"
+               }
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "link" : 78,
+                  "node" : "noc-pr",
+                  "interface" : "swp4"
+               }
+            }
+         ],
+         "name" : "tor-2",
+         "tier" : 0
+      },
+      {
+         "tier" : 0,
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "link" : 15,
+                  "node" : "dell-s5048-01",
+                  "interface" : "swp11"
+               },
+               "name" : "swp3"
+            },
+            {
+               "connected_to" : {
+                  "node" : "dell-s5048-01",
+                  "link" : 37,
+                  "interface" : "swp2"
+               },
+               "name" : "swp10"
+            },
+            {
+               "connected_to" : {
+                  "link" : 15,
+                  "node" : "dell-s5048-01",
+                  "interface" : "swp3"
+               },
+               "name" : "swp11"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "node" : "dell-s5048-01",
+                  "link" : 26
+               },
+               "name" : "swp12"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp10",
+                  "node" : "dell-s5048-01",
+                  "link" : 37
+               },
+               "name" : "swp2"
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp12",
+                  "node" : "dell-s5048-01",
+                  "link" : 26
+               }
+            }
+         ],
+         "name" : "dell-s5048-01",
+         "inventory" : {
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "E Systems E_VX",
+            "os" : "CL E.2.0",
+            "asic" : "EE Inc E-Z",
+            "license_state" : "ok"
+         },
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "clag" : false,
+            "evpn" : false,
+            "vni" : []
+         }
+      },
+      {
+         "tier" : 0,
+         "inventory" : {
+            "license_state" : "missing",
+            "asic" : "DD Inc D-Z",
+            "platform" : "D Systems D_VX",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "os" : "CL D.2.0"
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "clag" : false,
+            "evpn" : false,
+            "vni" : [],
+            "lldp" : true,
+            "bgp" : false
+         },
+         "interfaces" : [
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "link" : 8,
+                  "node" : "noc-pr",
+                  "interface" : "swp5"
+               }
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 51,
+                  "node" : "firewall-2"
+               }
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "interface" : "mac:00:02:00:00:00:11",
+                  "link" : 40,
+                  "node" : "firewall-1"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 33,
+                  "node" : "spine-3",
+                  "interface" : "swp9"
+               },
+               "name" : "swp5"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "link" : 76,
+                  "node" : "noc-se"
+               },
+               "name" : "swp2"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp9",
+                  "node" : "spine-2",
+                  "link" : 72
+               },
+               "name" : "swp4"
+            },
+            {
+               "connected_to" : {
+                  "link" : 22,
+                  "node" : "spine-1",
+                  "interface" : "swp9"
+               },
+               "name" : "swp3"
+            }
+         ],
+         "name" : "exit-1"
+      },
+      {
+         "name" : "hostd-11",
+         "interfaces" : [
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "interface" : "swp7",
+                  "link" : 10,
+                  "node" : "torc-12"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp7",
+                  "node" : "torc-11",
+                  "link" : 54
+               },
+               "name" : "swp1"
+            },
+            {
+               "connected_to" : {
+                  "link" : 62,
+                  "node" : "noc-se",
+                  "interface" : "swp16"
+               },
+               "name" : "swp4"
+            },
+            {
+               "connected_to" : {
+                  "link" : 18,
+                  "node" : "noc-pr",
+                  "interface" : "swp16"
+               },
+               "name" : "swp3"
+            }
+         ],
+         "inventory" : {
+            "os" : "Ubuntu 16.04.1 LTS (Xenial Xerus)",
+            "netq_agent_version" : "2.1.1-ub16.04u16~1556839512.e4ce0d1",
+            "platform" : "N/A N/A",
+            "license_state" : "N/A",
+            "asic" : "N/A N/A"
+         },
+         "protocol" : {
+            "clag" : false,
+            "evpn" : false,
+            "vni" : [],
+            "lldp" : true,
+            "bgp" : false
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "tier" : 0
+      },
+      {
+         "tier" : 0,
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "evpn" : false,
+            "vni" : [],
+            "clag" : false,
+            "bgp" : false,
+            "lldp" : true
+         },
+         "inventory" : {
+            "asic" : "N/A N/A",
+            "license_state" : "N/A",
+            "os" : "CentOS Linux 7 (Core)",
+            "netq_agent_version" : "2.1.1-rh7u16~1556839332.e4ce0d1",
+            "platform" : "N/A N/A"
+         },
+         "interfaces" : [
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp19",
+                  "node" : "noc-se",
+                  "link" : 92
+               }
+            },
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "interface" : "swp19",
+                  "link" : 75,
+                  "node" : "noc-pr"
+               }
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "interface" : "swp8",
+                  "link" : 46,
+                  "node" : "torc-22"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp8",
+                  "node" : "torc-21",
+                  "link" : 13
+               },
+               "name" : "swp1"
+            }
+         ],
+         "name" : "hostd-22"
+      },
+      {
+         "tier" : 0,
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "vni" : [],
+            "evpn" : false,
+            "clag" : false,
+            "bgp" : false,
+            "lldp" : true
+         },
+         "inventory" : {
+            "license_state" : "N/A",
+            "asic" : "N/A N/A",
+            "os" : "Ubuntu 16.04.1 LTS (Xenial Xerus)",
+            "platform" : "N/A N/A",
+            "netq_agent_version" : "2.1.1-ub16.04u16~1556839512.e4ce0d1"
+         },
+         "name" : "firewall-1",
+         "interfaces" : [
+            {
+               "name" : "mac:00:02:00:00:00:11",
+               "connected_to" : {
+                  "node" : "exit-1",
+                  "link" : 40,
+                  "interface" : "swp6"
+               }
+            },
+            {
+               "name" : "mac:00:02:00:00:00:12",
+               "connected_to" : {
+                  "link" : 77,
+                  "node" : "exit-2",
+                  "interface" : "swp6"
+               }
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "link" : 90,
+                  "node" : "noc-se",
+                  "interface" : "swp14"
+               }
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "interface" : "swp14",
+                  "node" : "noc-pr",
+                  "link" : 89
+               }
+            }
+         ]
+      },
+      {
+         "name" : "noc-se",
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "link" : 6,
+                  "node" : "hosts-23",
+                  "interface" : "swp3"
+               },
+               "name" : "swp25"
+            },
+            {
+               "name" : "swp8",
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "node" : "torc-12",
+                  "link" : 47
+               }
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "link" : 16,
+                  "node" : "exit-2",
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "name" : "swp21",
+               "connected_to" : {
+                  "node" : "hosts-12",
+                  "link" : 80,
+                  "interface" : "swp3"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "link" : 32,
+                  "node" : "tor-1"
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp22",
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 88,
+                  "node" : "hosts-13"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "torc-21",
+                  "link" : 67,
+                  "interface" : "swp2"
+               },
+               "name" : "swp9"
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "link" : 82,
+                  "node" : "torc-11",
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "link" : 24,
+                  "node" : "tor-2",
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "node" : "exit-1",
+                  "link" : 76
+               },
+               "name" : "swp5"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "node" : "hostd-12",
+                  "link" : 86
+               },
+               "name" : "swp17"
+            },
+            {
+               "connected_to" : {
+                  "link" : 50,
+                  "node" : "hosts-21",
+                  "interface" : "swp3"
+               },
+               "name" : "swp23"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "link" : 57,
+                  "node" : "firewall-2"
+               },
+               "name" : "swp15"
+            },
+            {
+               "connected_to" : {
+                  "link" : 90,
+                  "node" : "firewall-1",
+                  "interface" : "swp2"
+               },
+               "name" : "swp14"
+            },
+            {
+               "name" : "swp13",
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "node" : "spine-3",
+                  "link" : 19
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "node" : "hostd-22",
+                  "link" : 92
+               },
+               "name" : "swp19"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "node" : "hostd-11",
+                  "link" : 62
+               },
+               "name" : "swp16"
+            },
+            {
+               "connected_to" : {
+                  "link" : 9,
+                  "node" : "torc-22",
+                  "interface" : "swp2"
+               },
+               "name" : "swp10"
+            },
+            {
+               "name" : "swp24",
+               "connected_to" : {
+                  "link" : 14,
+                  "node" : "hosts-22",
+                  "interface" : "swp3"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 25,
+                  "node" : "hosts-11",
+                  "interface" : "swp3"
+               },
+               "name" : "swp20"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "link" : 71,
+                  "node" : "spine-2"
+               },
+               "name" : "swp12"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "node" : "spine-1",
+                  "link" : 83
+               },
+               "name" : "swp11"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "link" : 66,
+                  "node" : "hostd-21"
+               },
+               "name" : "swp18"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "node" : "noc-pr",
+                  "link" : 3
+               },
+               "name" : "swp1"
+            }
+         ],
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "protocol" : {
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false,
+            "lldp" : true,
+            "bgp" : false
+         },
+         "inventory" : {
+            "platform" : "E Systems E_VX",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "os" : "CL E.2.0",
+            "license_state" : "ok",
+            "asic" : "EE Inc E-Z"
+         },
+         "tier" : 0
+      },
+      {
+         "tier" : 0,
+         "name" : "hosts-11",
+         "interfaces" : [
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "link" : 25,
+                  "node" : "noc-se",
+                  "interface" : "swp20"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp20",
+                  "link" : 48,
+                  "node" : "noc-pr"
+               },
+               "name" : "swp2"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp6",
+                  "link" : 42,
+                  "node" : "tor-1"
+               },
+               "name" : "swp1"
+            }
+         ],
+         "protocol" : {
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false,
+            "lldp" : true,
+            "bgp" : false
+         },
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "inventory" : {
+            "asic" : "N/A N/A",
+            "license_state" : "N/A",
+            "os" : "Ubuntu 16.04.1 LTS (Xenial Xerus)",
+            "platform" : "N/A N/A",
+            "netq_agent_version" : "2.1.1-ub16.04u16~1556839512.e4ce0d1"
+         }
+      },
+      {
+         "name" : "torc-12",
+         "interfaces" : [
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "link" : 60,
+                  "node" : "torc-11",
+                  "interface" : "swp6"
+               }
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "link" : 10,
+                  "node" : "hostd-11",
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 63,
+                  "node" : "spine-1",
+                  "interface" : "swp4"
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp8",
+               "connected_to" : {
+                  "link" : 21,
+                  "node" : "hostd-12",
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "noc-pr",
+                  "link" : 91,
+                  "interface" : "swp8"
+               },
+               "name" : "swp1"
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "link" : 29,
+                  "node" : "spine-2"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 35,
+                  "node" : "spine-3",
+                  "interface" : "swp4"
+               },
+               "name" : "swp5"
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "link" : 47,
+                  "node" : "noc-se",
+                  "interface" : "swp8"
+               }
+            }
+         ],
+         "protocol" : {
+            "lldp" : true,
+            "bgp" : false,
+            "evpn" : false,
+            "vni" : [],
+            "clag" : false
+         },
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "inventory" : {
+            "os" : "CL D.2.0",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "D Systems D_VX",
+            "asic" : "DD Inc D-Z",
+            "license_state" : "missing"
+         },
+         "tier" : 0
+      },
+      {
+         "inventory" : {
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "F Systems F_VX",
+            "os" : "CL F.2.0",
+            "license_state" : "bad",
+            "asic" : "FF Inc F-Z"
+         },
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "evpn" : false,
+            "vni" : [],
+            "clag" : false
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "name" : "exit-2",
+         "interfaces" : [
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "node" : "noc-pr",
+                  "link" : 49,
+                  "interface" : "swp6"
+               }
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "link" : 16,
+                  "node" : "noc-se",
+                  "interface" : "swp6"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp10",
+                  "node" : "spine-1",
+                  "link" : 20
+               },
+               "name" : "swp3"
+            },
+            {
+               "connected_to" : {
+                  "node" : "spine-3",
+                  "link" : 4,
+                  "interface" : "swp10"
+               },
+               "name" : "swp5"
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "node" : "firewall-1",
+                  "link" : 77,
+                  "interface" : "mac:00:02:00:00:00:12"
+               }
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "link" : 28,
+                  "node" : "firewall-2",
+                  "interface" : "swp4"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "spine-2",
+                  "link" : 84,
+                  "interface" : "swp10"
+               },
+               "name" : "swp4"
+            }
+         ],
+         "tier" : 0
+      },
+      {
+         "name" : "hosts-13",
+         "interfaces" : [
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "link" : 85,
+                  "node" : "noc-pr",
+                  "interface" : "swp22"
+               }
+            },
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "link" : 88,
+                  "node" : "noc-se",
+                  "interface" : "swp22"
+               }
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "node" : "tor-1",
+                  "link" : 17,
+                  "interface" : "swp8"
+               }
+            }
+         ],
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "lldp" : true,
+            "bgp" : false,
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false
+         },
+         "inventory" : {
+            "os" : "Ubuntu 16.04.1 LTS (Xenial Xerus)",
+            "platform" : "N/A N/A",
+            "netq_agent_version" : "2.1.1-ub16.04u16~1556839512.e4ce0d1",
+            "asic" : "N/A N/A",
+            "license_state" : "N/A"
+         },
+         "tier" : 0
+      },
+      {
+         "name" : "torc-21",
+         "interfaces" : [
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "link" : 70,
+                  "node" : "noc-pr",
+                  "interface" : "swp9"
+               }
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "link" : 53,
+                  "node" : "hostd-21",
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "node" : "spine-1",
+                  "link" : 61
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp8",
+               "connected_to" : {
+                  "link" : 13,
+                  "node" : "hostd-22",
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp9",
+                  "link" : 67,
+                  "node" : "noc-se"
+               },
+               "name" : "swp2"
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "interface" : "swp6",
+                  "link" : 12,
+                  "node" : "torc-22"
+               }
+            },
+            {
+               "name" : "swp5",
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "node" : "spine-3",
+                  "link" : 94
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "link" : 23,
+                  "node" : "spine-2"
+               },
+               "name" : "swp4"
+            }
+         ],
+         "inventory" : {
+            "platform" : "C Systems C_VX",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "os" : "CL C.2.0",
+            "asic" : "CC Inc C-Z",
+            "license_state" : "N/A"
+         },
+         "protocol" : {
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false,
+            "bgp" : false,
+            "lldp" : true
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "tier" : 0
+      },
+      {
+         "tier" : 0,
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "node" : "tor-2",
+                  "link" : 11,
+                  "interface" : "swp7"
+               },
+               "name" : "swp1"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp24",
+                  "node" : "noc-se",
+                  "link" : 14
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "node" : "noc-pr",
+                  "link" : 30,
+                  "interface" : "swp24"
+               }
+            }
+         ],
+         "name" : "hosts-22",
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false
+         },
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "inventory" : {
+            "platform" : "N/A N/A",
+            "netq_agent_version" : "2.1.1-rh7u16~1556839332.e4ce0d1",
+            "os" : "CentOS Linux 7 (Core)",
+            "asic" : "N/A N/A",
+            "license_state" : "N/A"
+         }
+      },
+      {
+         "tier" : 0,
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "interface" : "swp10",
+                  "link" : 7,
+                  "node" : "noc-pr"
+               },
+               "name" : "swp1"
+            },
+            {
+               "name" : "swp5",
+               "connected_to" : {
+                  "interface" : "swp6",
+                  "link" : 65,
+                  "node" : "spine-3"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "spine-1",
+                  "link" : 87,
+                  "interface" : "swp6"
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "interface" : "swp6",
+                  "node" : "torc-21",
+                  "link" : 12
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "link" : 39,
+                  "node" : "hostd-21"
+               },
+               "name" : "swp7"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp10",
+                  "node" : "noc-se",
+                  "link" : 9
+               },
+               "name" : "swp2"
+            },
+            {
+               "name" : "swp8",
+               "connected_to" : {
+                  "node" : "hostd-22",
+                  "link" : 46,
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp6",
+                  "link" : 59,
+                  "node" : "spine-2"
+               }
+            }
+         ],
+         "name" : "torc-22",
+         "inventory" : {
+            "license_state" : "bad",
+            "asic" : "BB Inc B-Z",
+            "platform" : "B Systems B_VX",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "os" : "CL B.2.0"
+         },
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "clag" : false,
+            "evpn" : false,
+            "vni" : []
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         }
+      },
+      {
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "lldp" : true,
+            "bgp" : false,
+            "vni" : [],
+            "evpn" : false,
+            "clag" : false
+         },
+         "inventory" : {
+            "asic" : "EE Inc E-Z",
+            "license_state" : "ok",
+            "os" : "CL E.2.0",
+            "platform" : "E Systems E_VX",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1"
+         },
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "interface" : "swp7",
+                  "node" : "spine-2",
+                  "link" : 69
+               },
+               "name" : "swp4"
+            },
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "link" : 68,
+                  "node" : "spine-1",
+                  "interface" : "swp7"
+               }
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 93,
+                  "node" : "noc-pr"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 42,
+                  "node" : "hosts-11",
+                  "interface" : "swp1"
+               },
+               "name" : "swp6"
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "node" : "hosts-12",
+                  "link" : 55
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "spine-3",
+                  "link" : 74,
+                  "interface" : "swp7"
+               },
+               "name" : "swp5"
+            },
+            {
+               "name" : "swp8",
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "node" : "hosts-13",
+                  "link" : 17
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "noc-se",
+                  "link" : 32,
+                  "interface" : "swp3"
+               },
+               "name" : "swp2"
+            }
+         ],
+         "name" : "tor-1",
+         "tier" : 0
+      },
+      {
+         "tier" : 0,
+         "inventory" : {
+            "license_state" : "N/A",
+            "asic" : "N/A N/A",
+            "os" : "CentOS Linux 7 (Core)",
+            "platform" : "N/A N/A",
+            "netq_agent_version" : "2.1.1-rh7u16~1556839332.e4ce0d1"
+         },
+         "protocol" : {
+            "evpn" : false,
+            "vni" : [],
+            "clag" : false,
+            "lldp" : true,
+            "bgp" : false
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "interface" : "swp7",
+                  "node" : "tor-1",
+                  "link" : 55
+               },
+               "name" : "swp1"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp21",
+                  "link" : 80,
+                  "node" : "noc-se"
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "interface" : "swp21",
+                  "link" : 79,
+                  "node" : "noc-pr"
+               }
+            }
+         ],
+         "name" : "hosts-12"
+      },
+      {
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "link" : 43,
+                  "node" : "torc-11",
+                  "interface" : "swp3"
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "node" : "noc-pr",
+                  "link" : 45,
+                  "interface" : "swp11"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 1,
+                  "node" : "tor-2"
+               },
+               "name" : "swp8"
+            },
+            {
+               "connected_to" : {
+                  "node" : "torc-21",
+                  "link" : 61,
+                  "interface" : "swp3"
+               },
+               "name" : "swp5"
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 87,
+                  "node" : "torc-22"
+               }
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "node" : "noc-se",
+                  "link" : 83,
+                  "interface" : "swp11"
+               }
+            },
+            {
+               "name" : "swp10",
+               "connected_to" : {
+                  "link" : 20,
+                  "node" : "exit-2",
+                  "interface" : "swp3"
+               }
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "link" : 68,
+                  "node" : "tor-1",
+                  "interface" : "swp3"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 63,
+                  "node" : "torc-12"
+               },
+               "name" : "swp4"
+            },
+            {
+               "name" : "swp9",
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 22,
+                  "node" : "exit-1"
+               }
+            }
+         ],
+         "name" : "spine-1",
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "clag" : false,
+            "evpn" : false,
+            "vni" : []
+         },
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "inventory" : {
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "G Systems G_VX",
+            "os" : "CL G.2.0",
+            "license_state" : "N/A",
+            "asic" : "GG Inc G-Z"
+         },
+         "tier" : 0
+      },
+      {
+         "interfaces" : [
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "link" : 56,
+                  "node" : "torc-11"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "exit-1",
+                  "link" : 72,
+                  "interface" : "swp4"
+               },
+               "name" : "swp9"
+            },
+            {
+               "name" : "swp10",
+               "connected_to" : {
+                  "link" : 84,
+                  "node" : "exit-2",
+                  "interface" : "swp4"
+               }
+            },
+            {
+               "name" : "swp7",
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "link" : 69,
+                  "node" : "tor-1"
+               }
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "link" : 29,
+                  "node" : "torc-12"
+               }
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "link" : 27,
+                  "node" : "noc-pr",
+                  "interface" : "swp12"
+               }
+            },
+            {
+               "name" : "swp5",
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "link" : 23,
+                  "node" : "torc-21"
+               }
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "link" : 59,
+                  "node" : "torc-22",
+                  "interface" : "swp4"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp4",
+                  "node" : "tor-2",
+                  "link" : 36
+               },
+               "name" : "swp8"
+            },
+            {
+               "connected_to" : {
+                  "node" : "noc-se",
+                  "link" : 71,
+                  "interface" : "swp12"
+               },
+               "name" : "swp2"
+            }
+         ],
+         "name" : "spine-2",
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "protocol" : {
+            "lldp" : true,
+            "bgp" : false,
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false
+         },
+         "inventory" : {
+            "platform" : "H Systems H_VX",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "os" : "CL H.2.0",
+            "asic" : "HH Inc H-Z",
+            "license_state" : "missing"
+         },
+         "tier" : 0
+      },
+      {
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "lldp" : true,
+            "bgp" : false,
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false
+         },
+         "inventory" : {
+            "license_state" : "N/A",
+            "asic" : "CC Inc C-Z",
+            "os" : "CL C.2.0",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "C Systems C_VX"
+         },
+         "name" : "spine-3",
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "link" : 41,
+                  "node" : "tor-2",
+                  "interface" : "swp5"
+               },
+               "name" : "swp8"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "link" : 44,
+                  "node" : "torc-11"
+               },
+               "name" : "swp3"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "link" : 74,
+                  "node" : "tor-1"
+               },
+               "name" : "swp7"
+            },
+            {
+               "name" : "swp5",
+               "connected_to" : {
+                  "link" : 94,
+                  "node" : "torc-21",
+                  "interface" : "swp5"
+               }
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "interface" : "swp13",
+                  "node" : "noc-se",
+                  "link" : 19
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp13",
+                  "node" : "noc-pr",
+                  "link" : 52
+               },
+               "name" : "swp1"
+            },
+            {
+               "name" : "swp9",
+               "connected_to" : {
+                  "link" : 33,
+                  "node" : "exit-1",
+                  "interface" : "swp5"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "link" : 65,
+                  "node" : "torc-22"
+               },
+               "name" : "swp6"
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "link" : 35,
+                  "node" : "torc-12"
+               }
+            },
+            {
+               "name" : "swp10",
+               "connected_to" : {
+                  "interface" : "swp5",
+                  "node" : "exit-2",
+                  "link" : 4
+               }
+            }
+         ],
+         "tier" : 0
+      },
+      {
+         "name" : "firewall-2",
+         "interfaces" : [
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "link" : 51,
+                  "node" : "exit-1",
+                  "interface" : "swp7"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 28,
+                  "node" : "exit-2",
+                  "interface" : "swp7"
+               },
+               "name" : "swp4"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp15",
+                  "link" : 57,
+                  "node" : "noc-se"
+               },
+               "name" : "swp2"
+            },
+            {
+               "connected_to" : {
+                  "link" : 73,
+                  "node" : "noc-pr",
+                  "interface" : "swp15"
+               },
+               "name" : "swp1"
+            }
+         ],
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "protocol" : {
+            "evpn" : false,
+            "vni" : [],
+            "clag" : false,
+            "lldp" : true,
+            "bgp" : false
+         },
+         "inventory" : {
+            "os" : "CentOS Linux 7 (Core)",
+            "netq_agent_version" : "2.1.1-rh7u16~1556839332.e4ce0d1",
+            "platform" : "N/A N/A",
+            "license_state" : "N/A",
+            "asic" : "N/A N/A"
+         },
+         "tier" : 0
+      },
+      {
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "clag" : false,
+            "evpn" : false,
+            "vni" : []
+         },
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "inventory" : {
+            "asic" : "N/A N/A",
+            "license_state" : "N/A",
+            "os" : "Ubuntu 16.04.1 LTS (Xenial Xerus)",
+            "netq_agent_version" : "2.1.1-ub16.04u16~1556839512.e4ce0d1",
+            "platform" : "N/A N/A"
+         },
+         "name" : "hostd-21",
+         "interfaces" : [
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "link" : 39,
+                  "node" : "torc-22",
+                  "interface" : "swp7"
+               }
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "node" : "torc-21",
+                  "link" : 53,
+                  "interface" : "swp7"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp18",
+                  "node" : "noc-se",
+                  "link" : 66
+               },
+               "name" : "swp4"
+            },
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "interface" : "swp18",
+                  "node" : "noc-pr",
+                  "link" : 64
+               }
+            }
+         ],
+         "tier" : 0
+      },
+      {
+         "interfaces" : [
+            {
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "node" : "noc-se",
+                  "link" : 3
+               },
+               "name" : "swp1"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "node" : "exit-1",
+                  "link" : 8
+               },
+               "name" : "swp5"
+            },
+            {
+               "connected_to" : {
+                  "node" : "hostd-21",
+                  "link" : 64,
+                  "interface" : "swp3"
+               },
+               "name" : "swp18"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp3",
+                  "link" : 58,
+                  "node" : "hostd-12"
+               },
+               "name" : "swp17"
+            },
+            {
+               "name" : "swp25",
+               "connected_to" : {
+                  "link" : 5,
+                  "node" : "hosts-23",
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "link" : 93,
+                  "node" : "tor-1",
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "name" : "swp13",
+               "connected_to" : {
+                  "link" : 52,
+                  "node" : "spine-3",
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "link" : 73,
+                  "node" : "firewall-2"
+               },
+               "name" : "swp15"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "node" : "hosts-22",
+                  "link" : 30
+               },
+               "name" : "swp24"
+            },
+            {
+               "connected_to" : {
+                  "link" : 75,
+                  "node" : "hostd-22",
+                  "interface" : "swp3"
+               },
+               "name" : "swp19"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "link" : 85,
+                  "node" : "hosts-13"
+               },
+               "name" : "swp22"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "link" : 7,
+                  "node" : "torc-22"
+               },
+               "name" : "swp10"
+            },
+            {
+               "name" : "swp16",
+               "connected_to" : {
+                  "link" : 18,
+                  "node" : "hostd-11",
+                  "interface" : "swp3"
+               }
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "link" : 78,
+                  "node" : "tor-2",
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 49,
+                  "node" : "exit-2",
+                  "interface" : "swp1"
+               },
+               "name" : "swp6"
+            },
+            {
+               "name" : "swp8",
+               "connected_to" : {
+                  "link" : 91,
+                  "node" : "torc-12",
+                  "interface" : "swp1"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 89,
+                  "node" : "firewall-1",
+                  "interface" : "swp1"
+               },
+               "name" : "swp14"
+            },
+            {
+               "name" : "swp21",
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "node" : "hosts-12",
+                  "link" : 79
+               }
+            },
+            {
+               "name" : "swp20",
+               "connected_to" : {
+                  "link" : 48,
+                  "node" : "hosts-11",
+                  "interface" : "swp2"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "link" : 45,
+                  "node" : "spine-1"
+               },
+               "name" : "swp11"
+            },
+            {
+               "name" : "swp9",
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "node" : "torc-21",
+                  "link" : 70
+               }
+            },
+            {
+               "name" : "swp12",
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "link" : 27,
+                  "node" : "spine-2"
+               }
+            },
+            {
+               "connected_to" : {
+                  "node" : "torc-11",
+                  "link" : 34,
+                  "interface" : "swp1"
+               },
+               "name" : "swp7"
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp2",
+                  "node" : "hosts-21",
+                  "link" : 81
+               },
+               "name" : "swp23"
+            }
+         ],
+         "name" : "noc-pr",
+         "inventory" : {
+            "license_state" : "bad",
+            "asic" : "FF Inc F-Z",
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "F Systems F_VX",
+            "os" : "CL F.2.0"
+         },
+         "protocol" : {
+            "clag" : false,
+            "evpn" : false,
+            "vni" : [],
+            "bgp" : false,
+            "lldp" : true
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "tier" : 0
+      },
+      {
+         "inventory" : {
+            "netq_agent_version" : "2.1.1-ub16.04u16~1556839512.e4ce0d1",
+            "platform" : "N/A N/A",
+            "os" : "Ubuntu 16.04.1 LTS (Xenial Xerus)",
+            "asic" : "N/A N/A",
+            "license_state" : "N/A"
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false,
+            "bgp" : false,
+            "lldp" : true
+         },
+         "interfaces" : [
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "node" : "noc-se",
+                  "link" : 6,
+                  "interface" : "swp25"
+               }
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "interface" : "swp25",
+                  "node" : "noc-pr",
+                  "link" : 5
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp8",
+                  "link" : 2,
+                  "node" : "tor-2"
+               },
+               "name" : "swp1"
+            }
+         ],
+         "name" : "hosts-23",
+         "tier" : 0
+      },
+      {
+         "name" : "hostd-12",
+         "interfaces" : [
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "interface" : "swp17",
+                  "link" : 86,
+                  "node" : "noc-se"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp17",
+                  "node" : "noc-pr",
+                  "link" : 58
+               },
+               "name" : "swp3"
+            },
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "node" : "torc-12",
+                  "link" : 21,
+                  "interface" : "swp8"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 31,
+                  "node" : "torc-11",
+                  "interface" : "swp8"
+               },
+               "name" : "swp1"
+            }
+         ],
+         "inventory" : {
+            "license_state" : "N/A",
+            "asic" : "N/A N/A",
+            "netq_agent_version" : "2.1.1-rh7u16~1556839332.e4ce0d1",
+            "platform" : "N/A N/A",
+            "os" : "CentOS Linux 7 (Core)"
+         },
+         "events" : {
+            "count_info" : 0,
+            "count_alarm" : 0
+         },
+         "protocol" : {
+            "clag" : false,
+            "evpn" : false,
+            "vni" : [],
+            "lldp" : true,
+            "bgp" : false
+         },
+         "tier" : 0
+      },
+      {
+         "events" : {
+            "count_alarm" : 0,
+            "count_info" : 0
+         },
+         "protocol" : {
+            "bgp" : false,
+            "lldp" : true,
+            "clag" : false,
+            "vni" : [],
+            "evpn" : false
+         },
+         "inventory" : {
+            "netq_agent_version" : "2.1.1-cl3u16~1556839511.e4ce0d1",
+            "platform" : "F Systems F_VX",
+            "os" : "CL F.2.0",
+            "license_state" : "bad",
+            "asic" : "FF Inc F-Z"
+         },
+         "name" : "torc-11",
+         "interfaces" : [
+            {
+               "name" : "swp2",
+               "connected_to" : {
+                  "interface" : "swp7",
+                  "node" : "noc-se",
+                  "link" : 82
+               }
+            },
+            {
+               "name" : "swp8",
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "link" : 31,
+                  "node" : "hostd-12"
+               }
+            },
+            {
+               "name" : "swp1",
+               "connected_to" : {
+                  "node" : "noc-pr",
+                  "link" : 34,
+                  "interface" : "swp7"
+               }
+            },
+            {
+               "name" : "swp6",
+               "connected_to" : {
+                  "link" : 60,
+                  "node" : "torc-12",
+                  "interface" : "swp6"
+               }
+            },
+            {
+               "connected_to" : {
+                  "interface" : "swp1",
+                  "link" : 54,
+                  "node" : "hostd-11"
+               },
+               "name" : "swp7"
+            },
+            {
+               "name" : "swp4",
+               "connected_to" : {
+                  "link" : 56,
+                  "node" : "spine-2",
+                  "interface" : "swp3"
+               }
+            },
+            {
+               "connected_to" : {
+                  "link" : 44,
+                  "node" : "spine-3",
+                  "interface" : "swp3"
+               },
+               "name" : "swp5"
+            },
+            {
+               "name" : "swp3",
+               "connected_to" : {
+                  "node" : "spine-1",
+                  "link" : 43,
+                  "interface" : "swp3"
+               }
+            }
+         ],
+         "tier" : 0
+      }
+   ],
+   "inventory" : {
+      "unique_counts" : {
+         "os" : 9,
+         "netq_agent_version" : 3,
+         "platform" : 8,
+         "license_state" : 4,
+         "asic" : 8
+      }
+   },
+   "events" : {
+      "count_alarm" : 0,
+      "count_info" : 0
+   },
+   "tiers" : {
+      "0" : "Tier 0"
+   },
+   "name" : "topology",
+   "links" : [
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "exit-2"
+            },
+            {
+               "node" : "spine-1",
+               "interface" : "swp10"
+            }
+         ],
+         "id" : 20
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "exit-1",
+               "interface" : "swp4"
+            },
+            {
+               "interface" : "swp9",
+               "node" : "spine-2"
+            }
+         ],
+         "id" : 72
+      },
+      {
+         "id" : 88,
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hosts-13"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp22"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "noc-pr",
+               "interface" : "swp3"
+            },
+            {
+               "node" : "tor-1",
+               "interface" : "swp1"
+            }
+         ],
+         "id" : 93
+      },
+      {
+         "id" : 81,
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "hosts-21"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp23"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hosts-12",
+               "interface" : "swp1"
+            },
+            {
+               "node" : "tor-1",
+               "interface" : "swp7"
+            }
+         ],
+         "id" : 55
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp6",
+               "node" : "torc-11"
+            },
+            {
+               "interface" : "swp6",
+               "node" : "torc-12"
+            }
+         ],
+         "id" : 60
+      },
+      {
+         "id" : 49,
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "exit-2"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp6"
+            }
+         ]
+      },
+      {
+         "id" : 6,
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hosts-23"
+            },
+            {
+               "interface" : "swp25",
+               "node" : "noc-se"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hosts-11"
+            },
+            {
+               "interface" : "swp20",
+               "node" : "noc-se"
+            }
+         ],
+         "id" : 25
+      },
+      {
+         "id" : 12,
+         "interfaces" : [
+            {
+               "interface" : "swp6",
+               "node" : "torc-21"
+            },
+            {
+               "interface" : "swp6",
+               "node" : "torc-22"
+            }
+         ]
+      },
+      {
+         "id" : 87,
+         "interfaces" : [
+            {
+               "node" : "spine-1",
+               "interface" : "swp6"
+            },
+            {
+               "interface" : "swp3",
+               "node" : "torc-22"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "exit-1"
+            },
+            {
+               "interface" : "swp9",
+               "node" : "spine-1"
+            }
+         ],
+         "id" : 22
+      },
+      {
+         "id" : 35,
+         "interfaces" : [
+            {
+               "interface" : "swp4",
+               "node" : "spine-3"
+            },
+            {
+               "interface" : "swp5",
+               "node" : "torc-12"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp7",
+               "node" : "noc-pr"
+            },
+            {
+               "interface" : "swp1",
+               "node" : "torc-11"
+            }
+         ],
+         "id" : 34
+      },
+      {
+         "id" : 70,
+         "interfaces" : [
+            {
+               "interface" : "swp9",
+               "node" : "noc-pr"
+            },
+            {
+               "node" : "torc-21",
+               "interface" : "swp1"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp10",
+               "node" : "noc-pr"
+            },
+            {
+               "node" : "torc-22",
+               "interface" : "swp1"
+            }
+         ],
+         "id" : 7
+      },
+      {
+         "id" : 77,
+         "interfaces" : [
+            {
+               "interface" : "swp6",
+               "node" : "exit-2"
+            },
+            {
+               "interface" : "mac:00:02:00:00:00:12",
+               "node" : "firewall-1"
+            }
+         ]
+      },
+      {
+         "id" : 57,
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "firewall-2"
+            },
+            {
+               "interface" : "swp15",
+               "node" : "noc-se"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "hosts-22"
+            },
+            {
+               "interface" : "swp24",
+               "node" : "noc-pr"
+            }
+         ],
+         "id" : 30
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hosts-11",
+               "interface" : "swp2"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp20"
+            }
+         ],
+         "id" : 48
+      },
+      {
+         "id" : 76,
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "exit-1"
+            },
+            {
+               "interface" : "swp5",
+               "node" : "noc-se"
+            }
+         ]
+      },
+      {
+         "id" : 52,
+         "interfaces" : [
+            {
+               "interface" : "swp13",
+               "node" : "noc-pr"
+            },
+            {
+               "node" : "spine-3",
+               "interface" : "swp1"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "hosts-21"
+            },
+            {
+               "interface" : "swp6",
+               "node" : "tor-2"
+            }
+         ],
+         "id" : 38
+      },
+      {
+         "id" : 33,
+         "interfaces" : [
+            {
+               "node" : "exit-1",
+               "interface" : "swp5"
+            },
+            {
+               "interface" : "swp9",
+               "node" : "spine-3"
+            }
+         ]
+      },
+      {
+         "id" : 64,
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hostd-21"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp18"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "spine-3",
+               "interface" : "swp8"
+            },
+            {
+               "interface" : "swp5",
+               "node" : "tor-2"
+            }
+         ],
+         "id" : 41
+      },
+      {
+         "id" : 62,
+         "interfaces" : [
+            {
+               "interface" : "swp4",
+               "node" : "hostd-11"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp16"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "noc-pr"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp1"
+            }
+         ],
+         "id" : 3
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "spine-3",
+               "interface" : "swp7"
+            },
+            {
+               "node" : "tor-1",
+               "interface" : "swp5"
+            }
+         ],
+         "id" : 74
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "noc-se",
+               "interface" : "swp13"
+            },
+            {
+               "interface" : "swp2",
+               "node" : "spine-3"
+            }
+         ],
+         "id" : 19
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp12",
+               "node" : "noc-se"
+            },
+            {
+               "node" : "spine-2",
+               "interface" : "swp2"
+            }
+         ],
+         "id" : 71
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp8",
+               "node" : "spine-1"
+            },
+            {
+               "node" : "tor-2",
+               "interface" : "swp3"
+            }
+         ],
+         "id" : 1
+      },
+      {
+         "id" : 18,
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hostd-11"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp16"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hosts-21",
+               "interface" : "swp3"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp23"
+            }
+         ],
+         "id" : 50
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hostd-12",
+               "interface" : "swp4"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp17"
+            }
+         ],
+         "id" : 86
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "spine-2",
+               "interface" : "swp7"
+            },
+            {
+               "node" : "tor-1",
+               "interface" : "swp4"
+            }
+         ],
+         "id" : 69
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp4",
+               "node" : "spine-2"
+            },
+            {
+               "node" : "torc-12",
+               "interface" : "swp4"
+            }
+         ],
+         "id" : 29
+      },
+      {
+         "id" : 68,
+         "interfaces" : [
+            {
+               "interface" : "swp7",
+               "node" : "spine-1"
+            },
+            {
+               "node" : "tor-1",
+               "interface" : "swp3"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hosts-13",
+               "interface" : "swp1"
+            },
+            {
+               "interface" : "swp8",
+               "node" : "tor-1"
+            }
+         ],
+         "id" : 17
+      },
+      {
+         "id" : 42,
+         "interfaces" : [
+            {
+               "node" : "hosts-11",
+               "interface" : "swp1"
+            },
+            {
+               "node" : "tor-1",
+               "interface" : "swp6"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hosts-13",
+               "interface" : "swp2"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp22"
+            }
+         ],
+         "id" : 85
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "dell-s5048-01",
+               "interface" : "swp12"
+            },
+            {
+               "node" : "dell-s5048-01",
+               "interface" : "swp4"
+            }
+         ],
+         "id" : 26
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hostd-11",
+               "interface" : "swp1"
+            },
+            {
+               "interface" : "swp7",
+               "node" : "torc-11"
+            }
+         ],
+         "id" : 54
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp5",
+               "node" : "spine-3"
+            },
+            {
+               "interface" : "swp5",
+               "node" : "torc-21"
+            }
+         ],
+         "id" : 94
+      },
+      {
+         "id" : 91,
+         "interfaces" : [
+            {
+               "interface" : "swp8",
+               "node" : "noc-pr"
+            },
+            {
+               "interface" : "swp1",
+               "node" : "torc-12"
+            }
+         ]
+      },
+      {
+         "id" : 15,
+         "interfaces" : [
+            {
+               "node" : "dell-s5048-01",
+               "interface" : "swp11"
+            },
+            {
+               "node" : "dell-s5048-01",
+               "interface" : "swp3"
+            }
+         ]
+      },
+      {
+         "id" : 27,
+         "interfaces" : [
+            {
+               "node" : "noc-pr",
+               "interface" : "swp12"
+            },
+            {
+               "interface" : "swp1",
+               "node" : "spine-2"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "spine-2",
+               "interface" : "swp6"
+            },
+            {
+               "node" : "torc-22",
+               "interface" : "swp4"
+            }
+         ],
+         "id" : 59
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "noc-se",
+               "interface" : "swp9"
+            },
+            {
+               "interface" : "swp2",
+               "node" : "torc-21"
+            }
+         ],
+         "id" : 67
+      },
+      {
+         "id" : 21,
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "hostd-12"
+            },
+            {
+               "node" : "torc-12",
+               "interface" : "swp8"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "dell-s5048-01",
+               "interface" : "swp10"
+            },
+            {
+               "node" : "dell-s5048-01",
+               "interface" : "swp2"
+            }
+         ],
+         "id" : 37
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "spine-2",
+               "interface" : "swp5"
+            },
+            {
+               "interface" : "swp4",
+               "node" : "torc-21"
+            }
+         ],
+         "id" : 23
+      },
+      {
+         "id" : 46,
+         "interfaces" : [
+            {
+               "node" : "hostd-22",
+               "interface" : "swp2"
+            },
+            {
+               "node" : "torc-22",
+               "interface" : "swp8"
+            }
+         ]
+      },
+      {
+         "id" : 9,
+         "interfaces" : [
+            {
+               "node" : "noc-se",
+               "interface" : "swp10"
+            },
+            {
+               "interface" : "swp2",
+               "node" : "torc-22"
+            }
+         ]
+      },
+      {
+         "id" : 2,
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "hosts-23"
+            },
+            {
+               "interface" : "swp8",
+               "node" : "tor-2"
+            }
+         ]
+      },
+      {
+         "id" : 40,
+         "interfaces" : [
+            {
+               "interface" : "swp6",
+               "node" : "exit-1"
+            },
+            {
+               "node" : "firewall-1",
+               "interface" : "mac:00:02:00:00:00:11"
+            }
+         ]
+      },
+      {
+         "id" : 4,
+         "interfaces" : [
+            {
+               "interface" : "swp5",
+               "node" : "exit-2"
+            },
+            {
+               "node" : "spine-3",
+               "interface" : "swp10"
+            }
+         ]
+      },
+      {
+         "id" : 84,
+         "interfaces" : [
+            {
+               "node" : "exit-2",
+               "interface" : "swp4"
+            },
+            {
+               "interface" : "swp10",
+               "node" : "spine-2"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "spine-3"
+            },
+            {
+               "interface" : "swp5",
+               "node" : "torc-11"
+            }
+         ],
+         "id" : 44
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "exit-1"
+            },
+            {
+               "interface" : "swp5",
+               "node" : "noc-pr"
+            }
+         ],
+         "id" : 8
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "hostd-12"
+            },
+            {
+               "node" : "torc-11",
+               "interface" : "swp8"
+            }
+         ],
+         "id" : 31
+      },
+      {
+         "id" : 14,
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hosts-22"
+            },
+            {
+               "interface" : "swp24",
+               "node" : "noc-se"
+            }
+         ]
+      },
+      {
+         "id" : 80,
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hosts-12"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp21"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "noc-pr",
+               "interface" : "swp4"
+            },
+            {
+               "interface" : "swp1",
+               "node" : "tor-2"
+            }
+         ],
+         "id" : 78
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp8",
+               "node" : "noc-se"
+            },
+            {
+               "interface" : "swp2",
+               "node" : "torc-12"
+            }
+         ],
+         "id" : 47
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hosts-23",
+               "interface" : "swp2"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp25"
+            }
+         ],
+         "id" : 5
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hostd-21",
+               "interface" : "swp4"
+            },
+            {
+               "interface" : "swp18",
+               "node" : "noc-se"
+            }
+         ],
+         "id" : 66
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp7",
+               "node" : "exit-1"
+            },
+            {
+               "interface" : "swp3",
+               "node" : "firewall-2"
+            }
+         ],
+         "id" : 51
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "noc-se",
+               "interface" : "swp7"
+            },
+            {
+               "interface" : "swp2",
+               "node" : "torc-11"
+            }
+         ],
+         "id" : 82
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "noc-se",
+               "interface" : "swp3"
+            },
+            {
+               "interface" : "swp2",
+               "node" : "tor-1"
+            }
+         ],
+         "id" : 32
+      },
+      {
+         "id" : 28,
+         "interfaces" : [
+            {
+               "interface" : "swp7",
+               "node" : "exit-2"
+            },
+            {
+               "interface" : "swp4",
+               "node" : "firewall-2"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "hostd-11"
+            },
+            {
+               "node" : "torc-12",
+               "interface" : "swp7"
+            }
+         ],
+         "id" : 10
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "spine-2",
+               "interface" : "swp3"
+            },
+            {
+               "node" : "torc-11",
+               "interface" : "swp4"
+            }
+         ],
+         "id" : 56
+      },
+      {
+         "id" : 13,
+         "interfaces" : [
+            {
+               "node" : "hostd-22",
+               "interface" : "swp1"
+            },
+            {
+               "node" : "torc-21",
+               "interface" : "swp8"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "hosts-22",
+               "interface" : "swp1"
+            },
+            {
+               "interface" : "swp7",
+               "node" : "tor-2"
+            }
+         ],
+         "id" : 11
+      },
+      {
+         "id" : 90,
+         "interfaces" : [
+            {
+               "node" : "firewall-1",
+               "interface" : "swp2"
+            },
+            {
+               "interface" : "swp14",
+               "node" : "noc-se"
+            }
+         ]
+      },
+      {
+         "id" : 58,
+         "interfaces" : [
+            {
+               "node" : "hostd-12",
+               "interface" : "swp3"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp17"
+            }
+         ]
+      },
+      {
+         "id" : 73,
+         "interfaces" : [
+            {
+               "node" : "firewall-2",
+               "interface" : "swp1"
+            },
+            {
+               "interface" : "swp15",
+               "node" : "noc-pr"
+            }
+         ]
+      },
+      {
+         "id" : 45,
+         "interfaces" : [
+            {
+               "interface" : "swp11",
+               "node" : "noc-pr"
+            },
+            {
+               "interface" : "swp1",
+               "node" : "spine-1"
+            }
+         ]
+      },
+      {
+         "id" : 92,
+         "interfaces" : [
+            {
+               "interface" : "swp4",
+               "node" : "hostd-22"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp19"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp4",
+               "node" : "noc-se"
+            },
+            {
+               "node" : "tor-2",
+               "interface" : "swp2"
+            }
+         ],
+         "id" : 24
+      },
+      {
+         "id" : 53,
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "hostd-21"
+            },
+            {
+               "interface" : "swp7",
+               "node" : "torc-21"
+            }
+         ]
+      },
+      {
+         "id" : 43,
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "spine-1"
+            },
+            {
+               "node" : "torc-11",
+               "interface" : "swp3"
+            }
+         ]
+      },
+      {
+         "id" : 89,
+         "interfaces" : [
+            {
+               "interface" : "swp1",
+               "node" : "firewall-1"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp14"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp11",
+               "node" : "noc-se"
+            },
+            {
+               "node" : "spine-1",
+               "interface" : "swp2"
+            }
+         ],
+         "id" : 83
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp5",
+               "node" : "spine-1"
+            },
+            {
+               "interface" : "swp3",
+               "node" : "torc-21"
+            }
+         ],
+         "id" : 61
+      },
+      {
+         "id" : 36,
+         "interfaces" : [
+            {
+               "interface" : "swp8",
+               "node" : "spine-2"
+            },
+            {
+               "interface" : "swp4",
+               "node" : "tor-2"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "hosts-12"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp21"
+            }
+         ],
+         "id" : 79
+      },
+      {
+         "id" : 63,
+         "interfaces" : [
+            {
+               "interface" : "swp4",
+               "node" : "spine-1"
+            },
+            {
+               "interface" : "swp3",
+               "node" : "torc-12"
+            }
+         ]
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp2",
+               "node" : "hostd-21"
+            },
+            {
+               "interface" : "swp7",
+               "node" : "torc-22"
+            }
+         ],
+         "id" : 39
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "exit-2",
+               "interface" : "swp2"
+            },
+            {
+               "node" : "noc-se",
+               "interface" : "swp6"
+            }
+         ],
+         "id" : 16
+      },
+      {
+         "interfaces" : [
+            {
+               "interface" : "swp3",
+               "node" : "hostd-22"
+            },
+            {
+               "node" : "noc-pr",
+               "interface" : "swp19"
+            }
+         ],
+         "id" : 75
+      },
+      {
+         "interfaces" : [
+            {
+               "node" : "spine-3",
+               "interface" : "swp6"
+            },
+            {
+               "node" : "torc-22",
+               "interface" : "swp5"
+            }
+         ],
+         "id" : 65
+      }
+   ]
+}
+

@@ -39,16 +39,16 @@ function run() {
     
         switch(n.name.split('-')[0]) {
           case 'noc':
-            n.tier = 5;
+            n.tier = 3;
             break;
           case 'spine':
-            n.tier = 4;
+            n.tier = 5;
             break;
           case 'tor':
             n.tier = 3;
             break;
           case 'torc':
-            n.tier = 2;
+            n.tier = 3;
             break;
           case 'host':
             n.tier = 1;

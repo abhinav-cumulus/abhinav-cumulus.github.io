@@ -94,7 +94,7 @@ function run() {
     console.log(nodesAtEachTier);
 
     graph.nodes.forEach(n => {
-      if(nodesAtEachTier[n.group] > 20) {
+      if(nodesAtEachTier[n.group] > 30) {
         n.hideLabel = true;
         n.shortenNodeSize = true;
       }

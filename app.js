@@ -60,6 +60,25 @@ function run() {
       })
     }
 
+    if(fileName == 'anil-topo.json') {
+      data.nodes.forEach(node => {
+        let name = node.name;
+        if(name.search(/nqcb(.*)spine(.*)/i) !== -1) {
+          node.tier = 5;
+        } 
+        else if(name.search(/nqcb(.*)leaf(.*)/i) !== -1) {
+          node.tier = 4;
+        }
+        else if(name.search(/hosts-(.*)/i) !== -1) {
+          node.tier = 3;
+        } 
+        else if(name.search(/hosts-(.*)-(.*)/i) !== -1) {
+          node.tier = 2;
+        } 
+        console.log(name, node.tier)
+      })
+    }
+
 
     var graph = {};
 
